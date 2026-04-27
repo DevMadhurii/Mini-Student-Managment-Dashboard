@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f4f6f9;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background: #1f2937;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form-section {
+  margin-top: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+input {
+  padding: 8px;
+  margin: 5px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.table-section {
+  margin-top: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+body.dark {
+  background: #111827;
+  color: white;
+}
+
+body.dark .sidebar {
+  background: #0f172a;
+}
+
+body.dark .card,
+body.dark .form-section,
+body.dark .table-section,
+body.dark .navbar {
+  background: #1f2937;
+  color: white;
+}
+
+body.dark input {
+  background: #111827;
+  color: white;
+  border: 1px solid #374151;
+}
+
+body.dark table {
+  color: white;
+}
+
+body.dark button {
+  background: #2563eb;
+  color: white;
+}

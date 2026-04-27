@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CMR Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">  
+  <aside class="sidebar">
+    <h2>CMR Panel</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>Students</li>
+      <li>Analytics</li>
+      <li>Settings</li>
+    </ul>
+  </aside>
+
+  <main class="main">
+    <div class="navbar">
+      <input type="text" id="search" placeholder="Search student..." onkeyup="searchStudent()">
+      <div class="profile">👩‍💻 Madhuri</div>
+      <button onclick="toggleDarkMode()" id="darkBtn">🌙 Dark Mode</button>
+    </div>
+
+    <div class="form-section">
+      <h3>Add / Update Student</h3>
+
+      <input type="hidden" id="editIndex">
+
+      <input type="text" id="name" placeholder="Enter Name">
+      <input type="text" id="course" placeholder="Enter Course">
+      <input type="text" id="status" placeholder="Enter Status">
+
+      <button onclick="addOrUpdateStudent()">Save</button>
+    </div>
+
+    <div class="table-section">
+      <h3>Student Records</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
